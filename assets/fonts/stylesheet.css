@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Argesta Display';
+    src: url('ArgestaDisplay-Regular.woff2') format('woff2'),
+        url('ArgestaDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gill Sans Nova Book';
+    src: url('GillSansNova-Book.woff2') format('woff2'),
+        url('GillSansNova-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
