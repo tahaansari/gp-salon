@@ -4,6 +4,7 @@
   padding: 0;
   font-weight: normal;
   box-sizing: border-box;
+  outline: none;
 }
 input,textarea{
   font-family: inherit;
@@ -34,34 +35,46 @@ p{
 }
 .container{
   padding: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 .form-label{
   display: block;
-  margin-bottom: .4em;
+  margin-bottom: .6em;
 }
 .form-input{
   width: 100%;
-  padding: 8px 16px;
+  padding: 10px 16px;
+  border: 1px solid black;
 }
 .btn-submit{
-    cursor: pointer;
     border: none;
     width: 100%;
     padding: 8px 16px;
     background-color: #000000;
     color: #ffffff;
     padding: 15px;
+    text-align: center;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+b{
+  font-family: 'Gill Sans Nova Bold';
 }
 .security-img{
   margin-top: 30px;
   margin-bottom: 30px;
+  text-align: center;
 }
 .otp-content{
   margin-bottom: 30px;
 }
 .text-white{
   color: #ffffff!important;
+}
+.error{
+  color: #E21616;
 }
 .fixed-bottom{
   position: fixed;
@@ -80,11 +93,11 @@ p{
 
 // FORM PAGE
 .form-heading{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .salon-form{
   &__item{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }
 #full-stars-example-two {
@@ -135,6 +148,7 @@ p{
 }
 // FORM PAGE
 
+// EDIT NUMBER
 .otp-form{
   &__label{
     display: block;
@@ -146,3 +160,51 @@ p{
     width: 100%;
   }
 }
+// EDIT NUMBER
+
+// ENTER OTP
+.edit-wrap{
+  display: flex;
+  align-items: center;
+  &__number{
+    margin-right: 10px;
+  }
+  &__text{
+    font-size: 12px;
+  }
+}
+.enter-otp-form{
+  &__inputwrap{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+  &__input{
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 40px;
+    text-align: center;
+    width: 60px;
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #a5a5a5;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: #a5a5a5;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: #a5a5a5;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: #a5a5a5;
+    }
+    &:last-child{
+      margin-right:0;
+    }
+  }
+}
+.resend-success{
+  margin-top: 15px;
+  color: #02A91B;
+}
+// ENTER OTP

@@ -19,21 +19,36 @@
         <img src="./assets/images/otp.png" alt="" />
       </div>
       <div class="otp-content">
+        <h2 class="error">Wrong OTP Entered</h2>
         <h2>Enter OTP</h2>
         <p>Please enter the OTP sent to</p>
-        <div>
-          <span>961 915 9064</span>
-          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-          <span>Edit</span>
+        <div class="edit-wrap">
+          <b class="edit-wrap__number">961 915 9064</b>
+          <span class="edit-wrap__text">
+            <a href="#">
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              Edit
+            </a>
+          </span>
         </div>
       </div>
-      <form action="#">
-        <input type="text" placeholder="0" />
+      <form class="enter-otp-form" action="#">
+        <div class="enter-otp-form__inputwrap">
+          <input class="enter-otp-form__input" type="text" placeholder="0" />
+          <input class="enter-otp-form__input" type="text" placeholder="0" />
+          <input class="enter-otp-form__input" type="text" placeholder="0" />
+          <input class="enter-otp-form__input" type="text" placeholder="0" />
+        </div>
+        <a href="#">*Resent OTP</a>
+        <div class="resend-success">
+          <i class="fa fa-check" aria-hidden="true"></i>
+          We've Resent OTP to your number
+        </div>
         <div class="fixed-bottom">
-          <button class="btn-submit">
+          <a href="#" class="btn-submit">
             Submit OTP
             <i class="fa fa-arrow-right fixed-bottom__arrow"></i>
-          </button>
+          </a>
         </div>
       </form>
     </div>
