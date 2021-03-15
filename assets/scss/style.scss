@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  line-height: 1;
+  box-sizing: border-box;
+}
+h1,h2{
+  margin-bottom: .4em;
+}
+p{
+  margin-bottom: 1rem;
+}
+.salon-form{
+  &__item{
+    margin-bottom: 15px;
+  }
+  &__label{
+    display: block;
+  }
+  &__input{
+    padding: 10px;
+    &--submit{
+
+    }
+  }
+}
