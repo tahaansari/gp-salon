@@ -15,13 +15,27 @@
   <body>
     <div class="container">
       <img class="logo" src="./assets/images/logo.png" alt="" />
-      <div class="form-heading">
-        <h2>Fill a form to get a chance to win amazing offers</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
+      <div class="security-img">
+        <img src="./assets/images/otp.png" alt="" />
       </div>
+      <div class="otp-content">
+        <h2>Edit Number</h2>
+        <p>Send OTP to this number</p>
+      </div>
+      <form class="otp-form" action="#">
+        <label class="form-label">*New Phone Number</label>
+        <input
+          class="form-input"
+          type="text"
+          placeholder="Enter new phone number"
+        />
+        <div class="fixed-bottom">
+          <button class="btn-submit">
+            Send OTP
+            <i class="fa fa-arrow-right fixed-bottom__arrow"></i>
+          </button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
